@@ -1,23 +1,14 @@
-import './App.css';
 import { useState } from 'react';
+import Header from './Components/Header';
+import Hero from './Components/Hero'
 
-function App() {
-  const [add, setAdd] = useState(5)
 
 
-  function Add(){
-    setAdd(add +1)
-  }
-
-  const Minus = ()=> {
-    setAdd(add -1)
-  }
-
+function App(){
   return (
-    <div className="App">
-      <button onClick={Add}>Add</button>
-      <div>{add}</div>
-      <button onClick={Minus}>Minus</button>
+    <div>
+      <Header />
+      <Hero />
     </div>
   );
 }
